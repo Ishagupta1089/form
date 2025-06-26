@@ -2,32 +2,115 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P8DPGDP9EF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P8DPGDP9EF');
-</script>
-  
-  <meta charset="UTF-8">
-  <title>Register for Data Analytics Course</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P8DPGDP9EF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
+    gtag('config', 'G-P8DPGDP9EF');
   </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for Data Analytics Course</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2b2e4a;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    label {
+      font-size: 1rem;
+      text-align: left;
+      color: #444;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-btn {
+      margin-top: 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+    }
+
+    @media (max-width: 500px) {
+      form {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Register Now</h1>
   <form action="confirmation.html">
-    <label>Name: <input type="text" name="name" required></label><br><br>
-    <label>Email: <input type="email" name="email" required></label><br><br>
+    <label>Name:
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
     <button type="submit">Submit</button>
   </form>
-  <button onclick="location.href='index.html'">Home</button>
+
+  <button class="home-btn" onclick="location.href='index.html'">Back to Home</button>
 </body>
 </html>
